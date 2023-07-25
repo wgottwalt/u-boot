@@ -895,6 +895,13 @@ config ZYNQ_SERIAL
 	  This driver supports the Cadence UART. It is found e.g. in Xilinx
 	  Zynq/ZynqMP.
 
+config ZYNQ_SERIAL_FULL
+	bool "Cadence (Xilinx Zynq) UART support with full feature support"
+	depends on DM_SERIAL
+	help
+	  This driver supports the Cadence UART with a much bigger feature set.
+	  It is found e.g. in Xilinx Zynq/ZynqMP.
+
 config MTK_SERIAL
 	bool "MediaTek High-speed UART support"
 	depends on DM_SERIAL
